@@ -1,30 +1,37 @@
 package kata.clash.units;
 
 public class Miner {
-	private int DefensiveHitpoints;
-	private int OffensiveHitpoints;
-	
-	public int getDefensiveHitpoints() {
-		return DefensiveHitpoints;
-	}
-	private void setDefensiveHitpoints(int defensiveHitpoints) {
-		DefensiveHitpoints = defensiveHitpoints;
-	}
-	public int getOffensiveHitpoints() {
-		return OffensiveHitpoints;
-	}
-	private void setOffensiveHitpoints(int offensiveHitpoints) {
-		OffensiveHitpoints = offensiveHitpoints;
-	}
-    public String ReceiveHit(int attackHitpoints)
-    {
-        throw new UnsupportedOperationException();
-    }
-    
-    public int Move(int seconds)
-    {
-      throw new UnsupportedOperationException();
+    private int defensiveHitpoints;
+    private int offensiveHitpoints;
+
+    public Miner() {
+        defensiveHitpoints = 800;
+        offensiveHitpoints = 1200;
     }
 
-	
+    public int getDefensiveHitpoints() {
+        return defensiveHitpoints;
+    }
+
+    private void setDefensiveHitpoints(int defensiveHitpoints) {
+        this.defensiveHitpoints = defensiveHitpoints;
+    }
+
+    public int getOffensiveHitpoints() {
+        return offensiveHitpoints;
+    }
+
+    private void setOffensiveHitpoints(int offensiveHitpoints) {
+        this.offensiveHitpoints = offensiveHitpoints;
+    }
+
+    public String ReceiveHit(int attackHitpoints) {
+        throw new UnsupportedOperationException();
+    }
+
+    public int Move(int seconds) {
+        throw new UnsupportedOperationException();
+    }
+
+
 }
