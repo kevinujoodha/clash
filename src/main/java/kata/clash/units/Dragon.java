@@ -26,7 +26,11 @@ public class Dragon {
     }
 
     public String ReceiveHit(int attackHitpoints) {
-        throw new UnsupportedOperationException();
+        defensiveHitpoints -= attackHitpoints;
+        if (defensiveHitpoints <= 0) {
+            return "I WILL RISE AGAIN FROM THE ASHES";
+        }
+        return "";
     }
 
     public int Move(int seconds) {

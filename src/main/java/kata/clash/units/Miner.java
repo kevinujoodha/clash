@@ -26,7 +26,11 @@ public class Miner {
     }
 
     public String ReceiveHit(int attackHitpoints) {
-        throw new UnsupportedOperationException();
+        defensiveHitpoints -= attackHitpoints;
+        if (defensiveHitpoints <= 0) {
+            return "we return in the ground";
+        }
+        return "";
     }
 
     public int Move(int seconds) {

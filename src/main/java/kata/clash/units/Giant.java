@@ -26,7 +26,12 @@ public class Giant {
     }
 
     public String ReceiveHit(int attackHitpoints) {
-        throw new UnsupportedOperationException();
+        defensiveHitpoints -= attackHitpoints;
+        if (defensiveHitpoints <= 0) {
+            return "OUR IRON FISTS WILL BE REMEMBERED FOREVER";
+        }
+        return "";
+
     }
 
     public int Move(int seconds) {

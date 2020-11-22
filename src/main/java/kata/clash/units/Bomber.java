@@ -26,7 +26,12 @@ public class Bomber {
     }
 
     public String ReceiveHit(int attackHitpoints) {
-        throw new UnsupportedOperationException();
+        defensiveHitpoints -= attackHitpoints;
+        if (defensiveHitpoints <= 0) {
+            return "WHEN YOU play with Explosives is dangerous bussiness";
+        }
+        return "";
+
     }
 
     public int Move(int seconds) {
