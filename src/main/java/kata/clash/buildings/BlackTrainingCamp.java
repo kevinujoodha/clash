@@ -1,15 +1,16 @@
 package kata.clash.buildings;
 
 import kata.clash.units.Dragon;
+import kata.clash.units.Unit;
 import kata.clash.units.UnitType;
 
-public class BlackTrainingCamp {
-	public static Dragon ProduceUnit(UnitType unitType)
-    {
-        if (unitType == UnitType.DRAGON)
-        	
-            return new Dragon();
+public class BlackTrainingCamp implements TrainingCamp {
 
-        throw new UnsupportedOperationException();
+    @Override
+    public Unit produceUnit(UnitType unitType) {
+        if (UnitType.DRAGON == unitType) {
+            return new Dragon();
+        }
+        throw new IllegalArgumentException("Blue Training Camp cannot produce " + unitType + " unit");
     }
 }

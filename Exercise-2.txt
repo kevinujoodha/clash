@@ -39,6 +39,13 @@ Each unit has offensive and defensive hitpoints as described bellow:
 	You arrived at a step where you have implemented quite a few things. Is there something you would have done differrent or you would want to
 	refactor ? Explain your ideas and suggestions.
 
+    - All 4 unit classes have the same properties and common methods. We can extract common things in an abstract class
+    to avoid code duplication.
+
+    - We can use a the factory pattern for training camps
+
+    - In some tests, we can use assertEquals for comparing strings instead of assertTrue
+
 	Implement them.
 
  * Estimated time: 5-15 minutes *
