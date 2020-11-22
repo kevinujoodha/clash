@@ -4,7 +4,7 @@ import kata.clash.exceptions.DwarfsAngryException;
 import kata.clash.exceptions.InvalidQuantityException;
 
 public class BlackElixirFactory {
-    public static int ProduceElixir(int gems, int blueElixir) throws Exception
+    public static int produceElixir(int gems, int blueElixir) throws Exception
     {
        
         if (gems < 2 || blueElixir < 200)
