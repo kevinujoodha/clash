@@ -9,7 +9,7 @@ public class Bomber extends Unit {
                 350,
                 800,
                 "WHEN YOU play with Explosives is dangerous bussiness",
-                MovementType.WALK
+                MovementType.RUN
         );
     }
 }

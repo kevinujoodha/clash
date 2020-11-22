@@ -24,17 +24,17 @@ public class Ex3 {
         Assert.assertEquals(expectedCoveredDistance, actualCoveredDistance);
     }
 
-    @Test
-    public void With_Bomber_Unit_For_1_second_Then_It_Should_Walk_And_Cover_3_Map_Spaces()
-    {
-        Bomber bomberUnit = new Bomber();
-        int timeForMovementSeconds = 1;
-        int expectedCoveredDistance = 3;
-
-        int actualCoveredDistance = bomberUnit.Move(timeForMovementSeconds);
-
-        Assert.assertEquals(expectedCoveredDistance, actualCoveredDistance);
-    }
+//    @Test
+//    public void With_Bomber_Unit_For_1_second_Then_It_Should_Walk_And_Cover_3_Map_Spaces()
+//    {
+//        Bomber bomberUnit = new Bomber();
+//        int timeForMovementSeconds = 1;
+//        int expectedCoveredDistance = 3;
+//
+//        int actualCoveredDistance = bomberUnit.Move(timeForMovementSeconds);
+//
+//        Assert.assertEquals(expectedCoveredDistance, actualCoveredDistance);
+//    }
 
     @Test
     public void With_Giant_Unit_For_1_second_Then_It_Should_Walk_And_Cover_3_Map_Spaces()
@@ -62,28 +62,28 @@ public class Ex3 {
     
     /* Q2 */
     
-//    	@Test
-//        public void With_Bomber_Unit_For_1_second_Then_It_Should_Run_And_Cover_6_Map_Spaces()
-//        {
-//            Bomber bomberUnit = new Bomber();
-//            int timeForMovementSeconds = 1;
-//            int expectedCoveredDistance = 6;
-//
-//            int actualCoveredDistance = bomberUnit.Move(timeForMovementSeconds);
-//
-//            Assert.assertEquals(expectedCoveredDistance, actualCoveredDistance);
-//        }
-//
-//    	@Test
-//        public void With_Bomber_Unit_For_6_second_Then_It_Should_Run_And_Cover_36_Map_Spaces()
-//        {
-//        	Bomber bomberUnit = new Bomber();
-//            int timeForMovementSeconds = 6;
-//            int expectedCoveredDistance = 36;
-//
-//            int actualCoveredDistance = bomberUnit.Move(timeForMovementSeconds);
-//
-//            Assert.assertEquals(expectedCoveredDistance, actualCoveredDistance);
-//        }
+    	@Test
+        public void With_Bomber_Unit_For_1_second_Then_It_Should_Run_And_Cover_6_Map_Spaces()
+        {
+            Bomber bomberUnit = new Bomber();
+            int timeForMovementSeconds = 1;
+            int expectedCoveredDistance = 6;
+
+            int actualCoveredDistance = bomberUnit.Move(timeForMovementSeconds);
+
+            Assert.assertEquals(expectedCoveredDistance, actualCoveredDistance);
+        }
+
+    	@Test
+        public void With_Bomber_Unit_For_6_second_Then_It_Should_Run_And_Cover_36_Map_Spaces()
+        {
+        	Bomber bomberUnit = new Bomber();
+            int timeForMovementSeconds = 6;
+            int expectedCoveredDistance = 36;
+
+            int actualCoveredDistance = bomberUnit.Move(timeForMovementSeconds);
+
+            Assert.assertEquals(expectedCoveredDistance, actualCoveredDistance);
+        }
     
 }
