@@ -18,7 +18,6 @@ public class Ex1 {
     @Test(expected = DwarfsAngryException.class)
     public void When_BlueElixir_Supplied_Is_Not_Enough_Throw_DwarfsAngryException() throws Exception {
         produceElixir(2, 199);
-        throw new UnsupportedOperationException();
     }
 
     @Test

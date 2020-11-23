@@ -1,5 +1,6 @@
 package kata.clash;
 
+import kata.clash.movements.MovementType;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -24,17 +25,18 @@ public class Ex3 {
         Assert.assertEquals(expectedCoveredDistance, actualCoveredDistance);
     }
 
-//    @Test
-//    public void With_Bomber_Unit_For_1_second_Then_It_Should_Walk_And_Cover_3_Map_Spaces()
-//    {
-//        Bomber bomberUnit = new Bomber();
-//        int timeForMovementSeconds = 1;
-//        int expectedCoveredDistance = 3;
-//
-//        int actualCoveredDistance = bomberUnit.Move(timeForMovementSeconds);
-//
-//        Assert.assertEquals(expectedCoveredDistance, actualCoveredDistance);
-//    }
+    @Test
+    public void With_Bomber_Unit_For_1_second_Then_It_Should_Walk_And_Cover_3_Map_Spaces()
+    {
+        Bomber bomberUnit = new Bomber();
+        int timeForMovementSeconds = 1;
+        int expectedCoveredDistance = 3;
+        bomberUnit.setMovementType(MovementType.WALK);
+
+        int actualCoveredDistance = bomberUnit.Move(timeForMovementSeconds);
+
+        Assert.assertEquals(expectedCoveredDistance, actualCoveredDistance);
+    }
 
     @Test
     public void With_Giant_Unit_For_1_second_Then_It_Should_Walk_And_Cover_3_Map_Spaces()

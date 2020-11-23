@@ -1,17 +1,24 @@
 package kata.clash;
 
-import kata.clash.buildings.TrainingCamp;
-import kata.clash.units.*;
-import org.junit.Assert;
-import org.junit.Test;
-
 import kata.clash.buildings.BlackTrainingCamp;
 import kata.clash.buildings.BlueTrainingCamp;
+import kata.clash.buildings.TrainingCamp;
+import kata.clash.units.Unit;
+import kata.clash.units.UnitType;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
 
 public class Ex2 {
 
-	private static TrainingCamp blacktrainingCamp = new BlackTrainingCamp();
-	private static TrainingCamp bluetrainingCamp = new BlueTrainingCamp();
+	private TrainingCamp blacktrainingCamp;
+	private TrainingCamp bluetrainingCamp;
+
+	@Before
+	public void setUp() throws Exception {
+		blacktrainingCamp = new BlackTrainingCamp();
+		bluetrainingCamp = new BlueTrainingCamp();
+	}
 
 	/* Q1 */
 
